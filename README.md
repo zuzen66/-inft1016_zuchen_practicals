@@ -81,16 +81,4 @@ def foo():
 ```python
 def my_function():
   print("Hello from a function")
-```
-
-##  Commit and Push Instructions
-
->  Don't forget:
-> - Commit your changes locally using:
->   ```bash
->   git add .
->   git commit -m "Completed Markdown Practical"
->   git push origin main
->   ```
-> - Make sure your **Practical Supervisor** is added as a **collaborator** so they can access and mark your practical.
-
+  
