@@ -82,3 +82,94 @@ def foo():
 def my_function():
   print("Hello from a function")
   
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <a href="#" onclick="alert('Hey!');">Click me</a>
+    <p id="box"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 2</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <a href="#" onclick="document.getElementById('box').innerHTML = 'You clicked it!';">Click me</a>
+    <p id="box"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <a href="#" onclick="document.getElementById('box').innerHTML = '<li>The link was pressed 1 times.</li>'; ">Click me</a>
+    <p id="box"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4</title>
+    <script>
+        counter = 0;
+
+        function countClicks() {
+            counter = counter + 1;
+            var output = 'The link was pressed ' + counter + ' times.';
+            var element = document.getElementById('boxy');
+            element.innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <a href="#" onclick="countClicks();">Click me</a>
+    <p id="boxy"></p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 5</title>
+    <script>
+        counter = 0;
+
+        function countClicks(element) {
+            counter = counter + 1;
+            var output = 'The link was pressed ' + counter + ' times.';
+            element.innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <a href="#" onclick="countClicks(this);">Click me</a>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 6</title>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>
+    <img src="http://www.outgrabe.net/cat01.jpg" 
+         onmouseover="this.src='http://www.outgrabe.net/cat02.jpg'" 
+         onmouseout="this.src='http://www.outgrabe.net/cat01.jpg'" />
+</body>
+</html>
+
